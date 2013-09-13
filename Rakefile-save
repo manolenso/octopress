@@ -6,8 +6,7 @@ require "stringex"
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
 ssh_user       = "manolenso@ssh.alwaysdata.com"
 ssh_port       = "22"
-ssh_pass       = "jesus59"
-document_root  = "/www/octopress"
+document_root  = "~/www/octopress/"
 rsync_delete   = true
 rsync_args     = ""  # Any extra arguments to pass to rsync
 deploy_default = "rsync"
@@ -242,7 +241,7 @@ task :rsync do
     exclude = "--exclude-from '#{File.expand_path('./rsync-exclude')}'"
   end
   puts "## Deploying website via Rsync"
-  ok_failed system("\"c:\\Program Files (x86)\\Bitvise SSH Client\\sftpc.exe\" #{ssh_user} -pw=#{ssh_pass} -cmd=\"put -s -o #{public_dir}/ #{document_root}\"")
+  ok_failed system("rsync -avze 'ssh -p #{ssh_port}' #{exclude} #{rsync_args} #{"--delete" unless rsync_delete == false} #{public_dir}/ #{ssh_user}:#{document_root}")
 end
 
 desc "deploy public directory to github pages"
@@ -338,10 +337,8 @@ task :setup_github_pages, :repo do |t, args|
       end
     end
   end
-  url = "http://#{user}.github.io"
-  url += "/#{project}" unless project == ''
   jekyll_config = IO.read('_config.yml')
-  jekyll_config.sub!(/^url:.*$/, "url: #{url}")
+  jekyll_config.sub!(/^url:.*$/, "url: #{blog_url(user, project)}")
   File.open('_config.yml', 'w') do |f|
     f.write jekyll_config
   end
@@ -361,7 +358,7 @@ task :setup_github_pages, :repo do |t, args|
       f.write rakefile
     end
   end
-  puts "\n---\n## Now you can deploy to #{url} with `rake deploy` ##"
+  puts "\n---\n## Now you can deploy to #{repo_url} with `rake deploy` ##"
 end
 
 def ok_failed(condition)
@@ -384,6 +381,16 @@ def ask(message, valid_options)
     answer = get_stdin(message)
   end
   answer
+end
+
+def blog_url(user, project)
+  url = if File.exists?('source/CNAME')
+    "http://#{IO.read('source/CNAME').strip}"
+  else
+    "http://#{user}.github.io"
+  end
+  url += "/#{project}" unless project == ''
+  url
 end
 
 desc "list tasks"

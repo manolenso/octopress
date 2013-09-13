@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://manolenso.alwaysdata.net/octopress/
+title: Manolenso Blog
+subtitle: A blogging framework.
+author: Manolenso
 simple_search: http://google.com/search
 description:
 
