@@ -2,7 +2,7 @@
 
 $toc-bg: #dfdfdf;
 
-$toc-incr: 5px;
+$toc-incr: 40px;
 
 div#tocBlock {
     @include drop-shadow-right-bottom(3px, #999);
@@ -12,12 +12,12 @@ div#tocBlock {
     width: 250px;
     padding-left: 20px;
     padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     text-decoration:underline;
     background: $toc-bg;
     border: solid 0.9em #fff;
-    margin: 0 0 10px 15px;
+    margin: 10px 20px 10px 15px;
 
     .tocHeading {
         font-weight: bold;
@@ -27,11 +27,11 @@ div#tocBlock {
     #toc {
         background: $toc-bg;
         ul {
-            list-style: none;
+
             li {
                 margin-left: $toc-incr !important;
                 padding: 0 !important;
-
+list-style: none;
             }
         }
     }

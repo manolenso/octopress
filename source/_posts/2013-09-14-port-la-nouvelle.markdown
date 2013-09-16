@@ -12,3 +12,4 @@ categories:
 {% img /images/photos/vac2.jpg %}
 {% img /images/photos/vac3.jpg %}
 {% img /images/photos/vac4.jpg %}
+{% img /images/photos/exportpng.png %}
