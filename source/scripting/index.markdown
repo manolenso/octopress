@@ -1,9 +1,95 @@
 ---
 layout: page
-title: "scritpting"
+title: "Photoshop CS6: Plus loin avec Javascript!"
 date: 2013-09-13 15:19
 comments: true
 sharing: true
 footer: true
+toc: true
 ---
-## ici les pages sur le script
+
+
+l'apprentissage du Javascript pour Photoshop est un peu ardu pour un débutant d'abors il y a très peu de ressources en français sur le sujet et celles qui existent requiert une certaine connaissance du Javascript. Je vais détailler le chemin que j'ai suivi pour commencer, les outils et ressources que j'ai pu glaner pour constituer un environnement de test et d'apprentissage. avant toutes choses il faut installer
+
+
+#Les outils de base:
+
+##ESTK CS6 (ExtendScript Toolkit)
+C'est l'éditeur fourni avec Photoshop CS6
+
+{% img /images/photos/estk1200.jpg %}
+
+#Les outils complementaires
+---
+
+##Le plugin ScriptListener.8li
+
+<http://helpx.adobe.com/photoshop/kb/plug-ins-photoshop-cs61.html>
+{% img /images/photos/ScriptListener.jpg %}
+ce plugin s'installe dans ???????? il suis en permanence Photoshop et ecris toutes les operation sur le bureau deux fichiers texte:  Pour Javascript le  fichier ScriptingListenerJS.log et Visual Basic le fichier ScriptingListenerVB.log
+chaque action effectuee dans Photoshop est transcrite dans ce fichier
+qui peut etre ecrit sous la forme d'une fonction
+
+{% img /images/photos/ScriptingListenerJS.jpg %}
+
+
+##Adobe Configurator 4
+{% img /images/photos/configurator4.jpg %}
+Cet editeur d'extention  [Adobe Configurator 4](http://labs.adobe.com/technologies/configurator/)
+permet de creer des panneaux personalises puis de les exporter au format ZPX
+
+
+Les extentions au format ZPX s'installent avec Extention Manager CS6
+<http://www.adobe.com/fr/exchange/em_download/em6_download.html>
+
+la page Adobe Scripting Center
+
+<http://www.adobe.com/devnet/scripting.html>
+
+#Les ressources documentaires
+---
+
+Le forum des devellopeurs Photoshop: [PS-Scripts](http://www.ps-scripts.com/bb/index.php)
+
+##ScriptUI for dummies:
+Un must-have [ScriptUI](http://www.kahrel.plus.com/indesign/scriptui.html)
+ L'exellent guide de  **Peter Kahrel** [(bio)](http://www.oreillynet.com/pub/au/2758) sur le scripting:
+aussi redacteur de **Scripting InDesign CS3/4 with JavaScript** mis à jour en aout 2010 pour
+Indesign CS5
+
+#Les ressources de script
+---
+
+##Xtoolkit:
+
+Xtoolkit est une suite de scripts et d'outils
+
+[XTOOLS](http://sourceforge.net/projects/ps-scripts/files/xtools/v2.0b1/)
+
+<http://ps-scripts.sourceforge.net/>
+
+[Documentation sur la suite XTools](http://ps-scripts.sourceforge.net/xtools.html#Anchor-Dem-43404)
+
+
+##Script Bay:
+
+**Script Bay** une extension Adobe (donc au format ZXP)
+
+de chez **In-tool**, pour les explications sur cette extention [voir ici](http://in-tools.com/article/script-bay/script-panel-replacement-for-the-entire-creative-suite/)
+
+Voir sur cette [page](http://in-tools.com/article/script-bay/script-bay-version-0-1-5/) pour telecharger **Script Bay**
+
+
+#Les ressources video
+---
+
+##Adobe TV
+
+La chaine Adobe TV est une mine
+
+
+{% include_code test.js %}
+
+
+
+
