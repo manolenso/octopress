@@ -8,6 +8,14 @@ footer: true
 toc: true
 ---
 
+Les outils de scripting Photoshop sont une merveilleuse aide pour automatiser et realiser des operations complexes sur les images, malgré toute les qualité de cet outil il arrive un moment ou ses limites sont atteintes, il faut passer au Javascript pour pouvoir manipuler le **DOM** le Document Object Model est une interface de programmation que permet par l'intermediere d'un language de script de manipuler les objets de photoshop. Le modele d'objet de photoshop est une __hierarchie d'imbrication__ Dans  photoshop l'objet application se trouve en haut de la hierarchie Les applications contiennent une collection Documents.
+La collection Documents contient des objets Document. Un objet Document contient une
+collection ArtLayers, une collection HistoryStates, une collection Layers, une collection Layersets et une
+collection Channels. Les commandes ou méthodes du DOM vous permettent d’ordonner à des documents
+Photoshop d’ajouter et de supprimer des objets, ou de définir ou changer des propriétés individuelles
+d’objet comme la couleur, la taille et la forme. Dans le diagramme ci-dessous, chaque noeud de la
+hiérarchie représente une classe dans le DOM Photoshop.
+{% img /images/photos/dom.jpg %}
 
 l'apprentissage du Javascript pour Photoshop est un peu ardu pour un débutant d'abors il y a très peu de ressources en français sur le sujet et celles qui existent requiert une certaine connaissance du Javascript. Je vais détailler le chemin que j'ai suivi pour commencer, les outils et ressources que j'ai pu glaner pour constituer un environnement de test et d'apprentissage. avant toutes choses il faut installer
 
@@ -15,7 +23,7 @@ l'apprentissage du Javascript pour Photoshop est un peu ardu pour un débutant d
 #Les outils de base:
 
 ##ESTK CS6 (ExtendScript Toolkit)
-C'est l'éditeur fourni avec Photoshop CS6
+C'est l'éditeur fourni avec Photoshop CS6, indispensable outil
 
 {% img /images/photos/estk1200.jpg %}
 
