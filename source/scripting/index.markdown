@@ -8,7 +8,7 @@ footer: true
 toc: true
 ---
 
-Les outils de scripting Photoshop sont une merveilleuse aide pour automatiser et realiser des operations complexes sur les images, malgré toute les qualité de cet outil il arrive un moment ou ses limites sont atteintes, il faut passer au Javascript pour pouvoir manipuler le **DOM** le Document Object Model est une interface de programmation que permet par l'intermediere d'un language de script de manipuler les objets de photoshop. Le modele d'objet de photoshop est une __hierarchie d'imbrication__ Dans  photoshop l'objet application se trouve en haut de la hierarchie Les applications contiennent une collection Documents.
+Les outils de scripting Photoshop sont une merveilleuse aide pour automatiser et realiser des operations complexes sur les images, malgré toute les qualité de cet outil il arrive un moment ou ses limites sont atteintes, il faut passer au Javascript pour pouvoir manipuler le **DOM** _Document Object Model_ est une interface de programmation qui permet par l'intermediere d'un language de script de manipuler les objets de photoshop. Le modele d'objet de photoshop est une __hierarchie d'imbrication__ Dans  photoshop l'objet application se trouve en haut de la hierarchie Les applications contiennent une collection Documents.
 La collection Documents contient des objets Document. Un objet Document contient une
 collection ArtLayers, une collection HistoryStates, une collection Layers, une collection Layersets et une
 collection Channels. Les commandes ou méthodes du DOM vous permettent d’ordonner à des documents
@@ -88,12 +88,27 @@ de chez **In-tool**, pour les explications sur cette extention [voir ici](http:/
 Voir sur cette [page](http://in-tools.com/article/script-bay/script-bay-version-0-1-5/) pour telecharger **Script Bay**
 
 
+#Le DOM
+---
+
+Le site de JongWare, Une Mine d'or pour parcourir le DOM dans une arborescence HTML ou en CHM à telecharger [c'est ici](http://www.jongware.com/idjshelp.html)
+
+
 #Les ressources video
 ---
 
 ##Adobe TV
 
-La chaine Adobe TV est une mine
+La chaine Adobe TV est une mine, j'ai apprecié l'émission **Chips & Tips**
+et tout particulierement les épisodes concernant le script:
+
+>* Utilisation du JavaScript dans Photoshop pour se rendre autonome des Script
+>* Créer un panneau personnalisé pour optimiser votre travail dans Photoshop
+
+avec Stéphane Baril, expert Design Thibault Imbert, et David Deraedt [c'est ici](http://tv.adobe.com/fr/show/chips-tips/)
+
+##Grafikart.fr
+
 
 
 {% include_code test.js %}
