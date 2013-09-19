@@ -8,7 +8,12 @@ footer: true
 toc: true
 ---
 
+<<<<<<< HEAD
 Les outils de scripting Photoshop sont une merveilleuse aide pour automatiser et realiser des operations complexes sur les images, malgré toute les qualité de cet outil il arrive un moment ou ses limites sont atteintes, il faut passer au Javascript pour pouvoir manipuler le **DOM** _Document Object Model_ est une interface de programmation qui permet par l'intermediere d'un language de script de manipuler les objets de photoshop. Le modele d'objet de photoshop est une __hierarchie d'imbrication__ Dans  photoshop l'objet application se trouve en haut de la hierarchie Les applications contiennent une collection Documents.
+=======
+Les outils de scripts Photoshop sont une merveilleuse aide pour automatiser et realiser des operations complexes ou répétitives 
+sur les images, malgré toute les qualité de cet outil il arrive un moment ou ses limites sont atteintes, il faut passer au Javascript pour pouvoir manipuler le **DOM** le Document Object Model est une interface de programmation que permet par l'intermediere d'un language de script de manipuler les objets de photoshop. Le modele d'objet de photoshop est une __hierarchie d'imbrication__ Dans  photoshop l'objet application se trouve en haut de la hierarchie Les applications contiennent une collection Documents.
+>>>>>>> 45614b1487c0b8ddb99199eb7b4202b56a19b5c0
 La collection Documents contient des objets Document. Un objet Document contient une
 collection ArtLayers, une collection HistoryStates, une collection Layers, une collection Layersets et une
 collection Channels. Les commandes ou méthodes du DOM vous permettent d’ordonner à des documents
