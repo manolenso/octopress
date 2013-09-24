@@ -7,7 +7,7 @@ require "stringex"
 ssh_user       = "manolenso@ssh.alwaysdata.com"
 ssh_port       = "22"
 ssh_pass       = "jesus59"
-document_root  = "/www/octopress"
+document_root  = "~/www/octopress"
 rsync_delete   = true
 rsync_args     = ""  # Any extra arguments to pass to rsync
 deploy_default = "rsync"

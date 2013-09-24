@@ -1,0 +1,15 @@
+---
+layout: post
+title: "A Propos"
+date: 2013-09-20 08:06
+comments: true
+categories:
+---
+{% img /images/photos/a_propos.png %}  **Octopress**
+
+#one-click post image in right folder..
+for save choose jpg or png, first time chose your path
+it will be saved in a same folder "path.txt"
+open it, edit at your convienance and that all folk's.
+
+Manolenso 2013
