@@ -9,7 +9,7 @@ toc: true
 ---
 
 Les outils de scripts Photoshop sont une merveilleuse aide pour automatiser et realiser des operations complexes ou répétitives
-sur les images, malgré toute les qualité de cet outil il arrive un moment ou ses limites sont atteintes, il faut passer au Javascript pour pouvoir manipuler le **DOM** le Document Object Model est une interface de programmation que permet par l'intermediere d'un language de script de manipuler les objets de photoshop. Le modele d'objet de photoshop est une __hierarchie d'imbrication__ Dans  photoshop l'objet application se trouve en haut de la hierarchie Les applications contiennent une collection Documents.
+sur les images, malgré toute les qualité de cet outil il arrive un moment ou ses limites sont atteintes, il faut passer au Javascript pour pouvoir manipuler le **DOM** le Document Object Model est une interface de programmation que permet par l'intermediere d'un language de script de manipuler les objets de photoshop. Le modele d'objet de photoshop est une __hierarchie d'imbrication__ Tout en haut se trouve l'objet "**Application**"
 
 La collection Documents contient des objets Document. Un objet Document contient une
 collection ArtLayers, une collection HistoryStates, une collection Layers, une collection Layersets et une
@@ -17,7 +17,10 @@ collection Channels. Les commandes ou méthodes du DOM vous permettent d’ordon
 Photoshop d’ajouter et de supprimer des objets, ou de définir ou changer des propriétés individuelles
 d’objet comme la couleur, la taille et la forme. Dans le diagramme ci-dessous, chaque noeud de la
 hiérarchie représente une classe dans le DOM Photoshop.
+
 {% img /images/photos/dom.jpg %}
+{% img /images/photos/dom.png %}
+
 
 l'apprentissage du Javascript pour Photoshop est un peu ardu pour un débutant d'abors il y a très peu de ressources en français sur le sujet et celles qui existent requiert une certaine connaissance du Javascript. Je vais détailler le chemin que j'ai suivi pour commencer, les outils et ressources que j'ai pu glaner pour constituer un environnement de test et d'apprentissage. avant toutes choses il faut installer
 
@@ -28,6 +31,7 @@ l'apprentissage du Javascript pour Photoshop est un peu ardu pour un débutant d
 C'est l'éditeur fourni avec Photoshop CS6, indispensable outil
 
 {% img /images/photos/estk1200.jpg %}
+{% img /images/photos/estk1200.png %}
 
 #Les outils complementaires
 ---
@@ -41,7 +45,7 @@ chaque action effectuee dans Photoshop est transcrite dans ce fichier
 qui peut etre ecrit sous la forme d'une fonction
 
 {% img /images/photos/ScriptingListenerJS.jpg %}
-
+{% img /images/photos/ScriptingListenerJS.png %}
 
 ##Adobe Configurator 4
 {% img /images/photos/configurator4.jpg %}
