@@ -6,7 +6,7 @@ require "stringex"
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
 ssh_user       = "manolenso@ssh.alwaysdata.com"
 ssh_port       = "22"
-ssh_pass       = "jesus59"
+ssh_pass       = ""
 document_root  = "~/www/octopress"
 rsync_delete   = true
 rsync_args     = ""  # Any extra arguments to pass to rsync
